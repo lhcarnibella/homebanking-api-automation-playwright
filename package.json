@@ -1,0 +1,23 @@
+{
+  "name": "homebanking-api-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhcarnibella/homebanking-api-automation-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lhcarnibella/homebanking-api-automation-playwright/issues"
+  },
+  "homepage": "https://github.com/lhcarnibella/homebanking-api-automation-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1"
+  }
+}
