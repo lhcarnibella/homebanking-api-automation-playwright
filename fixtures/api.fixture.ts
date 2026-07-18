@@ -20,6 +20,8 @@ export const test = base.extend<MyFixtures>({
       },
     });
 
+    await context.post('/sistema/resetear');
+
     await use(context);
     await context.dispose();
   },
