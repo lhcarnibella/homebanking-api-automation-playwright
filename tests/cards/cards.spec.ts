@@ -5,6 +5,10 @@ import { cardData } from '../../test-data/cards';
 import { errorCodes } from '../../test-data/errorCodes';
 
 
+// Note: this describe.serial is redundant now that workers: 1 is set globally
+// in playwright.config.ts. Left here intentionally as a reference for how to
+// scope serial execution to a specific file/suite, in case parallelism is
+// reintroduced later (e.g. if test data isolation improves).
 test.describe.serial('Cards - sequential due to shared account state', () => {
     test('should create a debit card for an account', async ({ authenticatedRequest }) => {
         const accountsClient = new AccountsClient(authenticatedRequest);
